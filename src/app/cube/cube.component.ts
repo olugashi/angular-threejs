@@ -42,7 +42,7 @@ export class CubeComponent implements AfterViewInit  {
       requestAnimationFrame(render);
       self.renderer.render(self.scene, self.camera);
 
-      self.AnimateCube();
+      self.animate();
     }());
   }
 
@@ -66,15 +66,13 @@ export class CubeComponent implements AfterViewInit  {
 
   }
 
-  public AnimateCube() {
+  public animate() {
       this.mesh.rotateX(0.1);
       this.mesh.rotateY(0.1);
   }
 
   ngAfterViewInit() {
     this.init();
-    this.AnimateCube();
-
   }
 
 /* EVENTS */

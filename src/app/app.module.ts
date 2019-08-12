@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CubeComponent } from './cube/cube.component';
+import { PointsCloudComponent } from './points-cloud/points-cloud.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CubeComponent
+    CubeComponent,
+    PointsCloudComponent
   ],
   imports: [
     BrowserModule
